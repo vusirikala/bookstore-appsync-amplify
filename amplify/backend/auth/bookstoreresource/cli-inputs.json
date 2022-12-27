@@ -1,0 +1,97 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "bookstoregraphql53324080_identitypool_53324080",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "bookst53324080",
+    "userPoolName": "bookstoregraphql53324080_userpool_53324080",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your Verification Code for BookStore",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "birthdate",
+      "email",
+      "family_name",
+      "given_name",
+      "phone_number"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "bookst53324080_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "53324080",
+    "resourceName": "bookstoreresource",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "manual",
+    "thirdPartyAuth": false,
+    "userPoolGroups": true,
+    "adminQueries": true,
+    "triggers": {
+      "CreateAuthChallenge": [
+        "captcha-create-challenge",
+        "boilerplate-create-challenge",
+        "custom"
+      ],
+      "CustomMessage": [
+        "verification-link",
+        "custom"
+      ],
+      "DefineAuthChallenge": [
+        "captcha-define-challenge",
+        "boilerplate-define-challenge",
+        "custom"
+      ],
+      "PostConfirmation": [
+        "add-to-group",
+        "custom"
+      ],
+      "PreSignup": [
+        "email-filter-allowlist",
+        "email-filter-denylist",
+        "custom"
+      ],
+      "VerifyAuthChallengeResponse": [
+        "captcha-verify",
+        "boilerplate-verify",
+        "custom"
+      ],
+      "PreTokenGeneration": [
+        "alter-claims",
+        "custom"
+      ]
+    },
+    "hostedUI": true,
+    "hostedUIDomainName": "bookstoregraphql53324080-53324080",
+    "authProvidersUserPool": [
+      "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid profile email\",\"AttributeMapping\":{\"birthdate\":\"birthdays\",\"email\":\"email\",\"family_name\":\"family_name\",\"given_name\":\"given_name\",\"phone_number\":\"phoneNumbers\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/\"],\"LogoutURLs\":[\"https://localhost:4000/\"]}",
+    "userPoolGroupList": [
+      "admin"
+    ],
+    "adminQueryGroup": "admin",
+    "serviceName": "Cognito",
+    "verificationBucketName": "bookstoreresourceverificationbucket",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-verify",
+    "boilerplate-verify",
+    "custom"
+  ],
+  "parentResource": "bookstoreresource",
+  "functionName": "bookstoreresourceVerifyAuthChallengeResponse",
+  "resourceName": "bookstoreresourceVerifyAuthChallengeResponse",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/VerifyAuthChallengeResponse",
+  "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+  "triggerEventPath": "VerifyAuthChallengeResponse.event.json",
+  "roleName": "bookstoreresourceVerifyAuthChallengeResponse",
+  "skipEdit": true,
+  "RECAPTCHASECRET": "6Lfp_qAjAAAAALwaTqJJqWplGseq74tZx9gmuQQe",
+  "enableCors": false
+}

@@ -1,0 +1,40 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bookstoregraphql-dev-182831-authRole",
+      "UnauthRoleArn": "arn:aws:iam::554518381617:role/amplify-bookstoregraphql-dev-182831-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::554518381617:role/amplify-bookstoregraphql-dev-182831-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-bookstoregraphql-dev-182831-deployment",
+      "UnauthRoleName": "amplify-bookstoregraphql-dev-182831-unauthRole",
+      "StackName": "amplify-bookstoregraphql-dev-182831",
+      "StackId": "arn:aws:cloudformation:us-east-1:554518381617:stack/amplify-bookstoregraphql-dev-182831/64c5bc40-857d-11ed-9c1a-12632511aa15",
+      "AmplifyAppId": "d3lli3te4d0nsd"
+    },
+    "categories": {
+      "auth": {
+        "bookstoreresource": {}
+      },
+      "function": {
+        "bookstoreresourceCreateAuthChallenge": {},
+        "bookstoreresourceCustomMessage": {
+          "REDIRECTURL": "https://localhost:5000",
+          "EMAILSUBJECT": "Your bookstore account is confirmed",
+          "EMAILMESSAGE": "Your bookstore account is confirmed"
+        },
+        "bookstoreresourceDefineAuthChallenge": {},
+        "bookstoreresourcePostConfirmation": {
+          "GROUP": "admin"
+        },
+        "bookstoreresourcePreSignup": {
+          "DOMAINALLOWLIST": "gmail.com",
+          "DOMAINDENYLIST": "mailinator.com"
+        },
+        "bookstoreresourceVerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": "6Lfp_qAjAAAAALwaTqJJqWplGseq74tZx9gmuQQe"
+        },
+        "bookstoreresourcePreTokenGeneration": {}
+      }
+    }
+  }
+}

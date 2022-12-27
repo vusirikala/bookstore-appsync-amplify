@@ -1,0 +1,21 @@
+{
+  "trigger": true,
+  "modules": [
+    "email-filter-allowlist",
+    "email-filter-denylist",
+    "custom"
+  ],
+  "parentResource": "bookstoreresource",
+  "functionName": "bookstoreresourcePreSignup",
+  "resourceName": "bookstoreresourcePreSignup",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/PreSignup",
+  "triggerTemplate": "PreSignup.json.ejs",
+  "triggerEventPath": "PreSignup.event.json",
+  "roleName": "bookstoreresourcePreSignup",
+  "skipEdit": true,
+  "DOMAINALLOWLIST": "gmail.com",
+  "DOMAINDENYLIST": "mailinator.com",
+  "enableCors": false
+}

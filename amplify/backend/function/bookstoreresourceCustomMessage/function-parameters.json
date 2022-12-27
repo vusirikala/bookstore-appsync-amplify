@@ -1,0 +1,27 @@
+{
+  "trigger": true,
+  "modules": [
+    "verification-link",
+    "custom"
+  ],
+  "parentResource": "bookstoreresource",
+  "functionName": "bookstoreresourceCustomMessage",
+  "resourceName": "bookstoreresourceCustomMessage",
+  "parentStack": "auth",
+  "triggerEnvs": [
+    {
+      "key": "RESOURCENAME",
+      "value": "resourceName"
+    }
+  ],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/CustomMessage",
+  "triggerTemplate": "CustomMessage.json.ejs",
+  "triggerEventPath": "CustomMessage.event.json",
+  "roleName": "bookstoreresourceCustomMessage",
+  "skipEdit": true,
+  "REDIRECTURL": "https://localhost:5000",
+  "EMAILSUBJECT": "Your bookstore account is confirmed",
+  "EMAILMESSAGE": "Your bookstore account is confirmed",
+  "RESOURCENAME": "resourceName",
+  "enableCors": false
+}

@@ -1,0 +1,18 @@
+{
+  "trigger": true,
+  "modules": [
+    "alter-claims",
+    "custom"
+  ],
+  "parentResource": "bookstoreresource",
+  "functionName": "bookstoreresourcePreTokenGeneration",
+  "resourceName": "bookstoreresourcePreTokenGeneration",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/PreTokenGeneration",
+  "triggerTemplate": "PreTokenGeneration.json.ejs",
+  "triggerEventPath": "PreTokenGeneration.event.json",
+  "roleName": "bookstoreresourcePreTokenGeneration",
+  "skipEdit": true,
+  "enableCors": false
+}

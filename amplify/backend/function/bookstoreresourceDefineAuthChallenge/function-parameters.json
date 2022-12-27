@@ -1,0 +1,19 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-define-challenge",
+    "boilerplate-define-challenge",
+    "custom"
+  ],
+  "parentResource": "bookstoreresource",
+  "functionName": "bookstoreresourceDefineAuthChallenge",
+  "resourceName": "bookstoreresourceDefineAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/DefineAuthChallenge",
+  "triggerTemplate": "DefineAuthChallenge.json.ejs",
+  "triggerEventPath": "DefineAuthChallenge.event.json",
+  "roleName": "bookstoreresourceDefineAuthChallenge",
+  "skipEdit": true,
+  "enableCors": false
+}
